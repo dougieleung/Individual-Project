@@ -10,18 +10,18 @@ app.use(express.urlencoded({extended:true}));
 
 app.use(express.json());
 
-const cors = require('cors');
+// const cors = require('cors');
 
-app.use(cors({
-    origin: ['http://localhost:8080']
-}));
+// app.use(cors({
+//     origin: ['http://localhost:8080']
+// }));
 
 const router = require('./routes/index.js');
 
 app.use('/api/v1/', router);
 
 connection.once('open', ()=>{
-    const server = app.listen(process.env.PORT || 8080, ()=>{
+    const server = app.listen(process.env.PORT, ()=>{
     console.log("Connected and listening");
     });
 });
