@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:regular,italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Grey+Qo:regular);
+
+.app {
+    display: grid;
+    grid-template-columns: repeat 3(1fr);
+    grid-template-rows: repeat 5(1fr);
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.music {
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+}
+
+body {
+    background-image: url("https://wmdd4936project.s3.ca-central-1.amazonaws.com/paris_by_Leonard_Cotte.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(109, 68, 63);
+    font-family: 'Noto';
+    font-size: 18px;
+}
+
+.appTitle {
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    font-size: 52px;
+    margin-left: 70px;
+    opacity: 25%;
+}
+
+.motto {
+    font-family: 'Grey Qo';
+    color: white;
+    font-size: 45px;
+    margin-top: -30px;
+    margin-left: 200px;
+    opacity: 80%;
+}
+
+/* General styling for all the windows */
+
+.profileForm, .profileSection, .recommendationForm, .recommendationContainer {
+    background-color: rgba(250, 248, 248, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.profileTitle, .recommendationTitle, .formTitle {
+    font-size: 24px;
+    color: rgb(124, 46, 46);
+}
+
+/* Styling of the Wine Profile Questionnaire Form */
+
+.profileForm {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    max-height: 1200px;
+    width: 390px;
+}
+
+fieldset {
+    border: groove 5px rgba(236, 229, 229, 0.3);
+    padding: 10px;
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: start;
+}
+
+legend {
+    font-size: 20px;
+    color: rgb(124, 46, 46);
+}
+
+.nameInput, .emailInput {
+    height: 30px;
+    width: 385px;
+    border-radius: 5px;
+    border: 1px solid rgb(124, 46, 46);
+    margin: 10px 0;
+}
+
+.formSubmitButton, .formResetButton {
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 370px;
+    color: white;
+    background-color: rgb(97, 28, 28);
+}
+
+.formSubmitButton:hover, .formResetButton:hover {
+    transition: 0.5s all ease;
+    background-color: white;
+    color: rgb(143, 71, 71);
+    animation: pulse 1s ease 1;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+/* Styling of the VIP (Very Intoxicated Programmer) Window */
+
+.profileSection {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 390px;
+    height: auto;
+}
+
+/* Styling of the Wine Cellar Window */
+
+.cellarContainer {
+    background-image: url("https://wmdd4936project.s3.ca-central-1.amazonaws.com/winecellar+by+eric+cook.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 390px;
+    color: white;
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+}
+
+.cellarContainer ul {
+    list-style: none;
+}
+
+.CellarButton {
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 370px;
+    color: rgb(97, 28, 28);
+    background-color: white;    
+}
+
+.CellarButton:hover {
+    transition: 0.5s all ease;
+    background-color: rgb(143, 71, 71);
+    color: white;
+    animation: pulse 1s ease 1;
+    cursor: pointer;
+}
+
+.removeButton {
+    color: rgb(143, 71, 71);
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+/* Styling of the Recommendations window */
+
+.recommendationForm {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 390px;
+}
+
+.selectdropdown {
+    margin: 15px 0;
+    border: 1px solid rgb(124, 46, 46);
+    border-radius: 5px;
+    height: 30px;
+}
+
+/* Styling of the Recommended List of Wines */
+
+.recommendationContainer {
+    flex-direction: row;
+    align-items: stretch;
+    width: 390px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+.wineUnorderedList {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    padding-left: 0;
+    list-style: none;
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
+}
+
+.recommendationContainer li {
+    flex: 0 0 50%;
+}
+
+.wineCard {
+    background-color: white;
+    border: 1px solid black;
+    flex: 0;
+    padding: 20px;
+    margin: 5%;
+    max-width: 210px;
+    border-radius: 5px;
+    border: none;
+}
+
+.wineCard img {
+    height: auto;
+    max-width: 100%;
+}
+
+.AddToCellarButton {
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(124, 46, 46);
+}
+
