@@ -193,7 +193,7 @@ const App = props => {
                 />
                 <fieldset>
                 <legend>Experience: </legend>
-                {errorMessages.length >= 1 && errorMessages.find(error => error.message.includes("identity"||"identities")) ? <em style={{color:"red"}}> { errorMessages.find(error => error.message.includes("identity"||"identities")).message} </em> : ""} 
+                {errorMessages.length >= 1 && errorMessages.find(error => error.message.includes("identity", "identities")) ? <em style={{color:"red"}}> { errorMessages.find(error => error.message.includes("identity", "identities")).message} </em> : ""} 
                     <label> 
                         <input 
                             type="radio" 
@@ -235,7 +235,7 @@ const App = props => {
 
                 <fieldset>
                 <legend>How often do you have a glass? </legend>
-                {errorMessages.length >= 1 && errorMessages.find(error => error.message.includes("frequency"||"frequencies")) ? <em style={{color:"red"}}> { errorMessages.find(error => error.message.includes("frequency"||"frequencies")).message} </em> : ""} 
+                {errorMessages.length >= 1 && errorMessages.find(error => error.message.includes("frequency", "frequencies")) ? <em style={{color:"red"}}> { errorMessages.find(error => error.message.includes("frequency", "frequencies")).message} </em> : ""} 
                     <label>
                         <input 
                             type="radio" 
