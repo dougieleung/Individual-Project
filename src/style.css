@@ -136,15 +136,27 @@ legend {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    justify-content: space-between;
+    align-items: center;
     width: 390px;
     color: white;
     grid-column: 2 / 3;
     grid-row: 2 / 5;
 }
 
-.cellarContainer ul {
+.cellarWineList {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.cellarWineList ul {
     list-style: none;
+}
+
+.bottomCellarContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .CellarButton {

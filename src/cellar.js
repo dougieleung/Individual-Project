@@ -24,20 +24,23 @@ const Order = props => {
     return <>
     
         <div className="cellarContainer">
-            <h2 className="cellarTitle">Wine Cellar</h2>
-            {props.cellar ? (
-                <ul> {props.cellar.map((item, index) =>
-                <li key={index}>
-                    <h2>{item.title}</h2>
-                    <p>{item.description}</p>
-                    <p>{item.price}</p>
-                    <button className="removeButton" onClick={event => props.handleRemoveFromCellar(event, item.title)}>Remove Item</button>
-                </li>
-                )} 
-                </ul> ) : ""}
-
-            <button className="CellarButton" onClick={handleClick}>Save To Profile</button>
-            {saveWineList ? <em>{saveWineList}</em> : ""}   
+            <div className="cellarWineList">
+                <h2 className="cellarTitle">Wine Cellar</h2>
+                {props.cellar ? (
+                    <ul> {props.cellar.map((item, index) =>
+                    <li key={index}>
+                        <h2>{item.title}</h2>
+                        <p>{item.description}</p>
+                        <p>{item.price}</p>
+                        <button className="removeButton" onClick={event => props.handleRemoveFromCellar(event, item.title)}>Remove Item</button>
+                    </li>
+                    )} 
+                    </ul> ) : ""}
+            </div>
+            <div className="bottomCellarContainer">
+                <button className="CellarButton" onClick={handleClick}>Save To Profile</button>
+                {saveWineList ? <em>{saveWineList}</em> : ""}
+            </div>   
         </div>;
      
     </>
