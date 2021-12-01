@@ -38,8 +38,9 @@ const Order = props => {
                     </ul> ) : ""}
             </div>
             <div className="bottomCellarContainer">
-                <button className="CellarButton" onClick={handleClick}>Save To Profile</button>
                 {saveWineList ? <em>{saveWineList}</em> : ""}
+                <button className="CellarButton" onClick={handleClick}>Save To Profile</button>
+        
             </div>   
         </div>;
      
