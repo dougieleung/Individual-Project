@@ -63,7 +63,7 @@ body {
 .profileForm {
     grid-column: 1 / 2;
     grid-row: 1 / 5;
-    max-height: 1200px;
+    max-height: 1050px;
     width: 390px;
 }
 
@@ -187,6 +187,7 @@ legend {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    width: 150px;
 }
 
 @keyframes pulse {
@@ -255,7 +256,7 @@ legend {
     border: none;
     padding: 10px;
     border-radius: 5px;
-    width: 50px;
+    width: 150px;
     background-color: rgb(124, 46, 46);
 }
 
