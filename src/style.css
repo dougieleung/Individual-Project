@@ -63,7 +63,7 @@ body {
 .profileForm {
     grid-column: 1 / 2;
     grid-row: 1 / 5;
-    max-height: 1050px;
+    max-height: 1150px;
     width: 390px;
 }
 
