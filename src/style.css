@@ -102,16 +102,13 @@ legend {
 }
 
 .formSubmitButton:hover, .formResetButton:hover {
-    transition: 0.5s all ease;
-    background-color: white;
-    color: rgb(143, 71, 71);
-    animation: pulse 1s ease 1;
+    animation: pulse 0.5s ease 1;
     cursor: pointer;
 }
 
 @keyframes pulse {
     50% {
-        transform: scale(1.03);
+        transform: scale(1.02);
     }
 }
 
@@ -174,14 +171,13 @@ legend {
 }
 
 .CellarButton:hover {
-    transition: 0.5s all ease;
-    background-color: rgb(143, 71, 71);
-    color: white;
-    animation: pulse 1s ease 1;
+    animation: pulse 0.5s ease 1;
     cursor: pointer;
 }
 
-.removeButton {
+.removeButton:hover {
+    animation: pulse 0.5s ease 1;
+    cursor: pointer;
     color: rgb(143, 71, 71);
     background-color: white;
     padding: 10px;
@@ -192,7 +188,7 @@ legend {
 
 @keyframes pulse {
     50% {
-        transform: scale(1.03);
+        transform: scale(1.02);
     }
 }
 
@@ -264,3 +260,13 @@ legend {
     background-color: rgb(124, 46, 46);
 }
 
+.AddToCellarButton:hover {
+    animation: pulse 0.5s ease 1;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.02);
+    }
+}
