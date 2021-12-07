@@ -102,15 +102,19 @@ legend {
 }
 
 .formSubmitButton:hover, .formResetButton:hover {
-    animation: pulse 0.5s ease 1;
     cursor: pointer;
 }
 
-@keyframes pulse {
+.formSubmitButton:active, .formResetButton:active {
+    transition: 0.2s all ease;
+    transform: scale(1.015);
+}
+
+/* @keyframes pulse {
     50% {
         transform: scale(1.02);
     }
-}
+} */
 
 /* Styling of the VIP (Very Intoxicated Programmer) Window */
 
@@ -176,7 +180,7 @@ legend {
 }
 
 .removeButton:hover {
-    animation: pulse 0.5s ease 1;
+    /* animation: pulse 0.5s ease 1; */
     cursor: pointer;
     color: rgb(143, 71, 71);
     background-color: white;
@@ -186,11 +190,15 @@ legend {
     width: 135px;
 }
 
-@keyframes pulse {
+.removeButton:active {
+    transition: 0.2s all ease;
+    transform: scale(1.015);
+}
+/* @keyframes pulse {
     50% {
         transform: scale(1.02);
     }
-}
+} */
 
 /* Styling of the Recommendations window */
 
@@ -261,12 +269,17 @@ legend {
 }
 
 .AddToCellarButton:hover {
-    animation: pulse 0.5s ease 1;
+    /* animation: pulse 0.5s ease 1; */
     cursor: pointer;
 }
 
-@keyframes pulse {
+.AddToCellarButton:active {
+    transition: 0.2s all ease;
+    transform: scale(1.015);
+}
+
+/* @keyframes pulse {
     50% {
         transform: scale(1.02);
     }
-}
+} */
