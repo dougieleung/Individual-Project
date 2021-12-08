@@ -145,6 +145,10 @@ legend {
     grid-row: 2 / 5;
 }
 
+.cellarTitle {
+    align-self: center;
+}
+
 .cellarWineList {
     display: flex;
     flex-direction: column;
@@ -180,9 +184,9 @@ legend {
     cursor: pointer;
 }
 
-.removeButton:hover {
+.removeButton {
     /* animation: pulse 0.5s ease 1; */
-    cursor: pointer;
+ 
     color: rgb(143, 71, 71);
     background-color: white;
     padding: 10px;
@@ -192,6 +196,7 @@ legend {
 }
 
 .removeButton:active {
+    cursor: pointer;
     transition: 0.2s all ease;
     transform: scale(1.015);
 }
