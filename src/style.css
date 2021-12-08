@@ -174,8 +174,9 @@ legend {
     background-color: white;    
 }
 
-.CellarButton:hover {
-    animation: pulse 0.5s ease 1;
+.CellarButton:active {
+    transition: 0.2s all ease;
+    transform: scale(1.015);
     cursor: pointer;
 }
 
