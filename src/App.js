@@ -154,7 +154,7 @@ const App = props => {
       
         <h1 className="appTitle">Sommelier's Corner</h1>
         
-        <h2 className="motto">Programming At Its Finest ~ Doug Leung</h2>
+        <h2 className="motto">Programming At Its Finest</h2>
       
         <div className="app">
           
