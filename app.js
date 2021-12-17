@@ -10,11 +10,11 @@ app.use(express.urlencoded({extended:true}));
 
 app.use(express.json());
 
-// const cors = require('cors');
+const cors = require('cors');
 
-// app.use(cors({
-//     origin: ['http://localhost:8080']
-// }));
+app.use(cors({
+    origin: ['https://wmdd4936-dleung46.herokuapp.com']
+}));
 
 const router = require('./routes/index.js');
 
