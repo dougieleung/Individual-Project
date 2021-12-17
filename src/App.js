@@ -137,10 +137,6 @@ const App = props => {
           axios.post('https://wmdd4936-dleung46.herokuapp.com/api/v1/wineprofiles', newWineProfile)
           .then(() => {
             setCreate(newWineProfile);
-            setInput({
-                name: "",
-                emailAddress: "",
-            });
           }).catch((error) => {
             if (error.response) {
               console.log(error.response.data);
