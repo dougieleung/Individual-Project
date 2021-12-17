@@ -9,8 +9,6 @@
 
     .music {
         position: fixed;
-        right: 0px;
-        left: 0px;
         bottom: 10px;
     }
 
@@ -20,7 +18,7 @@
         background-size: cover;
         background-color: rgb(109, 68, 63);
         font-family: 'Noto';
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .appTitle {
@@ -34,12 +32,11 @@
     .motto {
         font-family: 'Grey Qo';
         color: white;
-        font-size: 30px;
+        font-size: 34px;
         margin-top: -30px;
         text-align: center;
         opacity: 80%;
     }
-
 
     /* General styling for all the windows */
 
@@ -54,23 +51,22 @@
     }
 
     .profileTitle, .recommendationTitle, .formTitle {
-        font-size: 24px;
+        font-size: 21px;
         color: rgb(124, 46, 46);
     }
-
 
     /* Styling of the Wine Profile Questionnaire Form */
 
     .profileForm {
         max-height: 1150px;
-        width: 370px;
+        width: 340px;
     }
 
     fieldset {
         border: groove 5px rgba(236, 229, 229, 0.3);
         padding: 10px;
         display: flex;
-        width: 340px;
+        width: 310px;
         flex-direction: column;
         align-items: start;
     }
@@ -82,7 +78,7 @@
 
     .nameInput, .emailInput {
         height: 30px;
-        width: 365px;
+        width: 335px;
         border-radius: 5px;
         border: 1px solid rgb(124, 46, 46);
         margin: 10px 0;
@@ -95,7 +91,7 @@
         border: none;
         padding: 10px;
         margin: 10px;
-        width: 350px;
+        width: 320px;
         color: white;
         background-color: rgb(97, 28, 28);
     }
@@ -112,7 +108,7 @@
     /* Styling of the VIP (Very Intoxicated Programmer) Window */
 
     .profileSection {
-        width: 370px;
+        width: 340px;
         height: auto;
     }
 
@@ -130,7 +126,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 370px;
+        width: 340px;
         color: white;
     }
 
@@ -162,7 +158,7 @@
         border: none;
         padding: 10px;
         margin: 10px;
-        width: 350px;
+        width: 320px;
         color: rgb(97, 28, 28);
         background-color: white;    
     }
@@ -179,7 +175,7 @@
         padding: 10px;
         border: none;
         border-radius: 5px;
-        width: 135px;
+        width: 125px;
     }
 
     .removeButton:active {
@@ -191,7 +187,7 @@
     /* Styling of the Recommendations window */
 
     .recommendationForm {
-        width: 370px;
+        width: 340px;
     }
 
     .selectdropdown {
@@ -210,7 +206,7 @@
         margin: 10px;
         display: flex;
         align-items: stretch;
-        width: 370px;
+        width: 340px;
     }
 
     .wineUnorderedList {
@@ -246,7 +242,7 @@
         border: none;
         padding: 10px;
         border-radius: 5px;
-        width: 135px;
+        width: 125px;
         background-color: rgb(124, 46, 46);
     }
 
