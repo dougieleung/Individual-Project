@@ -363,11 +363,11 @@
     }
   
     .wineCard {
-        max-width: 150px;
+        width: 160px;
     }
 
     .AddToCellarButton {
-        max-width: 140px;
+        width: 150px;
     }
 
   
