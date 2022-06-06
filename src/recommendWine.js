@@ -5,17 +5,15 @@ const RecommendWine = props => {
 
   const [recommendations, setRecommendations] = useState();
 
-  const specificGrape = "'" + props.grape + "'";
-
   useEffect(function displayRecommendations(){
 
       const options = {
         method: 'GET',
         url: 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/recommendation',
-        params: {wine: specificGrape, number: '4'},
+        params: {wine: `${props.grape}`, number: '4'},
         headers: {
-          'x-rapidapi-host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com',
-          'x-rapidapi-key': 'e2db6c2630msh1ecfed303fd1acfp1b1d28jsn4bb1e7714451'
+          'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com',
+          'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY
         }
       };
       
