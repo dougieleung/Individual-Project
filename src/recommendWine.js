@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
-import "dotenv/config";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const RecommendWine = props => {
 
