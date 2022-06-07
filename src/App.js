@@ -3,6 +3,7 @@ import axios from 'axios';
 import Profile from './profile.js';
 import RecommendWine from './recommendWine.js';
 import Cellar from './cellar.js';
+require('dotenv').config();
 
 // axios.defaults.baseURL = 'http://localhost:8080';
 
