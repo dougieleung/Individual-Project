@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
+import env from 'react-dotenv';
 
 const RecommendWine = props => {
 
@@ -13,7 +14,7 @@ const RecommendWine = props => {
         params: {wine: `${props.grape}`, number: '4'},
         headers: {
           'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com',
-          'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY
+          'X-RapidAPI-Key': env.REACT_APP_RAPID_API_KEY
         }
       };
       
