@@ -43,6 +43,7 @@
 
     .profileForm, .profileSection, .recommendationForm {
         background-color: rgba(250, 248, 248, 0.8);
+        box-shadow: 4px 4px 8px rgba(255,255,255,0.5);
         border-radius: 10px;
         padding: 20px;
         margin: 15px auto;
