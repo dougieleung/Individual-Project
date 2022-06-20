@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
 import env from 'react-dotenv';
-import Fade from "react-reveal/Fade";
 
 const RecommendWine = props => {
 
@@ -32,7 +31,6 @@ const RecommendWine = props => {
   <div className="recommendationContainer">
     <ul className="wineUnorderedList">
     {recommendations !== undefined ? recommendations.recommendedWines.map((item, index) => <li key={index}>
-      <Fade down>
       <div className="wineCard">
         <img src={item.imageUrl} alt="label image"/>
         <h2>{item.title}</h2>
@@ -40,7 +38,6 @@ const RecommendWine = props => {
         <p>{item.price}</p>
         <button className="AddToCellarButton" onClick={event=>props.handleAddToCellar(event,item)}>Add to Cellar</button>
       </div>
-      </Fade>
     </li>):""}
     </ul>
   </div>
