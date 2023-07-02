@@ -35,7 +35,7 @@ const RecommendWine = props => {
         <img src={item.imageUrl} alt="label image"/>
         <h2>{item.title}</h2>
         <p>{item.description}</p>
-        <p>{item.price}</p>
+        <p>{item.price.slice(0,6)}</p>
         <button className="AddToCellarButton" onClick={event=>props.handleAddToCellar(event,item)}>Add to Cellar</button>
       </div>
     </li>):""}
