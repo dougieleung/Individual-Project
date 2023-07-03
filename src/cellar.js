@@ -31,7 +31,7 @@ const Order = props => {
                     <li key={index}>
                         <h2>{item.title}</h2>
                         <p>{item.description}</p>
-                        <p>{item.price}</p>
+                        <p>{item.price.slice(0,6)}</p>
                         <button className="removeButton" onClick={event => props.handleRemoveFromCellar(event, item.title)}>Remove Item</button>
                     </li>
                     )} 

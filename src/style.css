@@ -145,6 +145,8 @@
 
     .cellarWineList ul {
         list-style: none;
+        align-self: center;
+        padding-left: 0;
     }
 
     .bottomCellarContainer {
