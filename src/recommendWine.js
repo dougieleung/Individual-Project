@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import env from "react-dotenv";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 
 const RecommendWine = (props) => {
   const [recommendations, setRecommendations] = useState();
 
   useEffect(
     function displayRecommendations() {
-
       setRecommendations(undefined);
 
       const options = {
@@ -38,11 +37,11 @@ const RecommendWine = (props) => {
   return (
     <>
       <div className="recommendationContainer">
-      <Fade down>
         <ul className="wineUnorderedList">
           {recommendations !== undefined
             ? recommendations.recommendedWines.map((item, index) => (
-                <li key={index}>
+                <Fade down>
+                  <li key={index}>
                     <div className="wineCard">
                       <img src={item.imageUrl} alt="label image" />
                       <h2>{item.title}</h2>
@@ -57,11 +56,11 @@ const RecommendWine = (props) => {
                         Add to Cellar
                       </button>
                     </div>
-                </li>
+                  </li>
+                </Fade>
               ))
             : ""}
         </ul>
-        </Fade>
       </div>
     </>
   );
