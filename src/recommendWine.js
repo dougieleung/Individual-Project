@@ -38,8 +38,8 @@ const RecommendWine = (props) => {
         <ul className="wineUnorderedList">
           {recommendations !== undefined
             ? recommendations.recommendedWines.map((item, index) => (
+              <Fade down>
                 <li key={index}>
-                  <Fade down>
                     <div className="wineCard">
                       <img src={item.imageUrl} alt="label image" />
                       <h2>{item.title}</h2>
@@ -54,8 +54,8 @@ const RecommendWine = (props) => {
                         Add to Cellar
                       </button>
                     </div>
-                  </Fade>
                 </li>
+                </Fade>
               ))
             : ""}
         </ul>
