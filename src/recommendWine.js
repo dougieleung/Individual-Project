@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import env from "react-dotenv";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 
 const RecommendWine = (props) => {
   const [recommendations, setRecommendations] = useState();
