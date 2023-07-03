@@ -8,6 +8,9 @@ const RecommendWine = (props) => {
 
   useEffect(
     function displayRecommendations() {
+
+      setRecommendations(undefined);
+
       const options = {
         method: "GET",
         url: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/wine/recommendation",
